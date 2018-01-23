@@ -1,21 +1,22 @@
+
 /**
  * Program to (Populate a given array with given number)
  *
- * @author LouisTran
+ * @author Donovan Green
  */
 import java.util.Scanner;
 import java.util.Arrays;
 
 public class p7LouisTran {
 // Changes in spelling errors
-   
+
     /**
      * Main Method
      *
      * @param args arguments from command line prompt
      */
     public static void main(String[] args) {
-        String name = "";
+
         Scanner input = new Scanner(System.in);
         System.out.println("How many numbers will your array have?");
         int userIn = input.nextInt();
@@ -25,7 +26,7 @@ public class p7LouisTran {
         double acutal = average(Prime);
         System.out.println("The average is " + acutal);
         System.out.println("The content of the array is " + Arrays.toString(Prime));
-        System.out.println (credit_LouisTran (name));
+
     }
 
     /**
@@ -39,7 +40,7 @@ public class p7LouisTran {
             Prime[x] = input.nextDouble();
         }
     }
-    
+
     /**
      * Main Method
      *
@@ -52,15 +53,5 @@ public class p7LouisTran {
             y = y + Prime[x];
         }
         return y / Prime.length;
-    }
-    
-     /**
-     * Main Method
-     *
-     * @param name (Prints the creator's name)
-     * @return ("The Creator Louis Tran")
-     */
-    public static String credit_LouisTran (String name){
-        return ("Creator Louis Tran");
     }
 }
